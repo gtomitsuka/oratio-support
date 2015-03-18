@@ -15,13 +15,13 @@
     <div class="pure-u-1 pure-u-md-1-3">
     <h1>Oratio.IO Support</h1>
     <p>Are you sure this question was never asked before? Please check our <a href="http://docs.oratio.io">FAQ/Docs</a></p>
-      <form class="pure-form pure-form-aligned">
+      <form class="pure-form pure-form-aligned" action="https://www.oratio.io/api/www/support" method="POST">
         <fieldset>
         <div class="pure-control-group">
-            <input id="email" type="email" placeholder="E-Mail Address">
+            <input id="email" type="email" placeholder="E-Mail Address" name="email">
         </div>
             <div class="pure-control-group">
-                <select id="state" class="pure-input-1-2">
+                <select id="state" class="pure-input-1-2" name="type">
                     <option>Bug Reports</option>
                     <option>Sales Contacts</option>
                     <option>Suggestions</option>
@@ -29,7 +29,7 @@
                 </select>
             </div>
           <div class="pure-control-group">
-            <textarea class="pure-input-1-2" placeholder="Your Message"></textarea>
+            <textarea class="pure-input-1-2" placeholder="Your Message" name="message"></textarea>
           </div>
           <button type="submit" class="pure-button pure-button-primary">Submit</button>
         </fieldset>
